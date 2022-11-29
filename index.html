@@ -4,227 +4,550 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
+		<link rel="stylesheet" href="./css/main.min.css" />
 		<title>Document</title>
 	</head>
 	<body>
-		<header>
-			<nav>
-				<ul>
-					<li><a href="">Главная</a></li>
-					<li><a href="">Оклейка автомобилей</a></li>
-					<li><a href="">Детейлинг автомобилей</a></li>
-					<li><a href="">Галерея работ</a></li>
+		<div class="foto">
+			<!-- header -->
+			<header class="header">
+				<div class="container">
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li class="header__item"><a class="header__link" href="">Главная</a></li>
+							<li class="header__item"><a class="header__link" href="">Оклейка автомобилей</a></li>
+							<li class="header__item"><a class="header__link" href="">Детейлинг автомобилей</a></li>
+							<li class="header__item"><a class="header__link" href="">Галерея работ</a></li>
+						</ul>
+						<svg class="header__icon" width="50" height="25">
+							<use href="./imeges/symbol-defs.svg#icon-line"></use>
+						</svg>
+					</nav>
+				</div>
+			</header>
+			<!-- hero -->
+			<section class="hero">
+				<h1 class="hero__title">CAR MUSC</h1>
+				<ul class="icons__list">
+					<li class="icons__item">
+						<svg class="icons__icon" width="15" height="15">
+							<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+						</svg>
+					</li>
+					<li class="icons__item">
+						<svg class="icons__icon" width="15" height="15">
+							<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+						</svg>
+					</li>
+					<li class="icons__item">
+						<svg class="icons__icon" width="15" height="15">
+							<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+						</svg>
+					</li>
+					<li class="icons__item">
+						<svg class="icons__icon" width="15" height="15">
+							<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+						</svg>
+					</li>
 				</ul>
-			</nav>
-		</header>
+				<p class="hero__text">
+					Lorem ipsum dolor sit amet, consectetur
+					<br />
+					adipiscing elit. Vitae orci urna amet penatibus.
+				</p>
+				<button class="primery__button">Наши услуги</button>
+			</section>
+			<!-- info -->
+			<section class="info">
+				<div class="info__address">
+					<h2 class="info__title">адрес:</h2>
+					<p class="info__text">
+						Lorem ipsum dolor sit amet,
+						<br />
+						consectetur adipiscing elit
+					</p>
+				</div>
+				<div class="info__contacts">
+					<h2 class="info__title">телефон:</h2>
+					<a href="" class="info__link">8 (812) 123-45-67</a>
+					<a href="" class="info__link">8-911-123-45-67</a>
+				</div>
+				<div class="info__schedule">
+					<h2 class="info__title">Режим работы:</h2>
+					<p class="info__text">пн-пт : 10:00 - 20:00</p>
+					<p class="info__text">сб-вск : 12:00 - 20:00</p>
+				</div>
+			</section>
+		</div>
 		<main>
-			<section>
-				<h1>CAR MUSC</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae orci urna amet penatibus.</p>
-				<button>Наши услуги</button>
-			</section>
-
-			<section>
-				<address>
-					<h2>адрес:</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				</address>
-				<div>
-					<h2>телефон:</h2>
-					<a href="">8 (812) 123-45-67</a>
-					<a href="">8-911-123-45-67</a>
+			<!-- achievements -->
+			<section class="achievements">
+				<div class="achievements__flex container">
+					<div class="achievements__block">
+						<h2 class="achievements__title">наши достижения от кубка россии до чемпионатов мира</h2>
+						<ul class="icons__list icons__list--start">
+							<li class="icons__item">
+								<svg width="15" height="15">
+									<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+								</svg>
+							</li>
+							<li class="icons__item">
+								<svg width="15" height="15">
+									<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+								</svg>
+							</li>
+							<li class="icons__item">
+								<svg width="15" height="15">
+									<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+								</svg>
+							</li>
+							<li class="icons__item">
+								<svg width="15" height="15">
+									<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+								</svg>
+							</li>
+						</ul>
+						<p class="achievements__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant tincidunt aliquam tincidunt pretium
+							sodales. Tristique odio pellentesque et tincidunt posuere arcu purus lobortis risus. Urna, ut amet odio
+							orci magnis praesent ultrices. Praesent malesuada lacus tellus tristique sit at. Sed viverra nulla nam
+							arcu, non iaculis pretium, volutpat.
+						</p>
+					</div>
+					<ul class="achievements-list">
+						<li class="achievements-list__item">
+							<h3 class="achievements-list__title">#1</h3>
+							<p class="achievements-list__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+							</p>
+						</li>
+						<li class="achievements-list__item">
+							<h3 class="achievements-list__title">#4</h3>
+							<p class="achievements-list__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+							</p>
+						</li>
+						<li class="achievements-list__item">
+							<h3 class="achievements-list__title">#6</h3>
+							<p class="achievements-list__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+							</p>
+						</li>
+						<li class="achievements-list__item">
+							<h3 class="achievements-list__title">#3</h3>
+							<p class="achievements-list__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+							</p>
+						</li>
+						<li class="achievements-list__item">
+							<h3 class="achievements-list__title">#2</h3>
+							<p class="achievements-list__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+							</p>
+						</li>
+						<li class="achievements-list__item">
+							<h3 class="achievements-list__title">#1</h3>
+							<p class="achievements-list__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+							</p>
+						</li>
+						<li class="achievements-list__item">
+							<h3 class="achievements-list__title">#1</h3>
+							<p class="achievements-list__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+							</p>
+						</li>
+						<li class="achievements-list__item">
+							<h3 class="achievements-list__title">
+								<svg width="38" height="45">
+									<use href="./imeges/symbol-defs.svg#icon-cup"></use>
+								</svg>
+							</h3>
+							<p class="achievements-list__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+							</p>
+						</li>
+					</ul>
 				</div>
-				<div>
-					<h2>Режим работы:</h2>
-					<p>пн-пт : 10:00 - 20:00</p>
-					<p>сб-вск : 12:00 - 20:00</p>
+			</section>
+			<!-- Exhibition -->
+			<section class="exhibition">
+				<ul class="exhibition-list">
+					<li class="exhibition__item">
+						<img src="./imeges/Rectangle-45.jpg" alt="фото машин" width="416" height="350" />
+						<div class="exhibition__img exhibition__img--fon">
+							<p class="exhibition__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.
+							</p>
+						</div>
+					</li>
+					<li class="exhibition__item">
+						<img src="./imeges/Rectangle-47.jpg" alt="фото машин" width="416" height="350" />
+						<div class="exhibition__img exhibition__img--fon">
+							<p class="exhibition__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit.
+							</p>
+						</div>
+					</li>
+					<li class="exhibition__item">
+						<img src="./imeges/Rectangle-49.jpg" alt="фото машин" width="416" height="350" />
+						<div class="exhibition__img exhibition__img--fon">
+							<p class="exhibition__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<!-- work -->
+			<section class="work">
+				<div class="container">
+					<div class="work__block">
+						<ul class="work__list">
+							<li class="work__item">
+								<h2 class="work__title">
+									<svg class="work__icon" width="56" height="70">
+										<use href="./imeges/symbol-defs.svg#icon-Group-53"></use>
+									</svg>
+									материалы от лучших компаний
+								</h2>
+								<p class="work__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, rutrum est, molestie proin tristique
+									duis sed. Morbi suspendisse amet nisl vestibulum risus. Quis pretium
+								</p>
+								<ul class="icons__list">
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+								</ul>
+							</li>
+							<li class="work__item">
+								<h2 class="work__title">
+									<svg class="work__icon" width="70" height="45">
+										<use href="./imeges/symbol-defs.svg#icon-Group-52"></use>
+									</svg>
+									Опытные мастера
+								</h2>
+								<p class="work__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et donec elementum egestas vitae ullamcorper.
+									Amet volutpat ornare pharetra amet adipiscing orci, lectus aenean ultricies. Erat viverra eget blandit
+									ornare. Molestie ipsum commodo faucibus rhoncus
+								</p>
+								<ul class="icons__list">
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+								</ul>
+							</li>
+
+							<li class="work__item">
+								<h2 class="work__title">
+									<svg class="work__icon" width="70" height="70">
+										<use href="./imeges/symbol-defs.svg#icon-Group-54"></use>
+									</svg>
+									Гарантия на все виды работы
+								</h2>
+								<p class="work__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat.</p>
+							</li>
+						</ul>
+						<div class="work__img">
+							<img src="./imeges/Rectangle-52.jpg" alt="голубая машина" width="636" height="550" />
+							<p class="work__text work__text--foto">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est.
+								Consectetur lectus.
+							</p>
+						</div>
+					</div>
 				</div>
 			</section>
-			<section>
-				<h2>наши достижения от кубка россии до чемпионатов мира</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant tincidunt aliquam tincidunt pretium sodales.
-					Tristique odio pellentesque et tincidunt posuere arcu purus lobortis risus. Urna, ut amet odio orci magnis
-					praesent ultrices. Praesent malesuada lacus tellus tristique sit at. Sed viverra nulla nam arcu, non iaculis
-					pretium, volutpat.
-				</p>
-				<ul>
-					<li>
-						<h3>#1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+			<!-- services -->
+			<section class="services">
+				<div class="container">
+					<h2 class="services__title">Наши услуги</h2>
+					<ul class="icons__list">
+						<li class="icons__item">
+							<svg width="15" height="15">
+								<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+							</svg>
+						</li>
+						<li class="icons__item">
+							<svg width="15" height="15">
+								<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+							</svg>
+						</li>
+						<li class="icons__item">
+							<svg width="15" height="15">
+								<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+							</svg>
+						</li>
+						<li class="icons__item">
+							<svg width="15" height="15">
+								<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+							</svg>
+						</li>
+					</ul>
+					<ul class="services-buttons">
+						<li class="services-buttons__item"><button class="services__button">Оклейка</button></li>
+						<li class="services-buttons__item">
+							<button class="services__button services__button--trenspar">Детейлинг</button>
+						</li>
+					</ul>
+					<ul class="services-list">
+						<li class="services-list__item">
+							<svg width="70" height="56">
+								<use href="./imeges/symbol-defs.svg#icon-Group-55"></use>
+							</svg>
+							<h2 class="services-list__title">Защитные пленки</h2>
+							<p class="services-list__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit.
+								Ut feugiat.
+							</p>
+							<button class="services-list__button">Подробнее</button>
+						</li>
+						<li class="services-list__item">
+							<svg width="56" height="70">
+								<use href="./imeges/symbol-defs.svg#icon-Group-53"></use>
+							</svg>
+							<h2 class="services-list__title">Цветные пленки</h2>
+							<p class="services-list__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit.
+								Ut feugiat.
+							</p>
+							<button class="services-list__button">Подробнее</button>
+						</li>
+						<li class="services-list__item">
+							<svg width="70" height="45">
+								<use href="./imeges/symbol-defs.svg#icon-Group-52"></use>
+							</svg>
+							<h2 class="services-list__title">Дизайн</h2>
+							<p class="services-list__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit.
+								Ut feugiat.
+							</p>
+							<button class="services-list__button">Подробнее</button>
+						</li>
+						<li class="services-list__item">
+							<svg width="70" height="70">
+								<use href="./imeges/symbol-defs.svg#icon-Group-54"></use>
+							</svg>
+							<h2 class="services-list__title">Оклейка салона</h2>
+							<p class="services-list__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit.
+								Ut feugiat.
+							</p>
+							<button class="services-list__button">Подробнее</button>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- work-revers -->
+			<section class="work work--revers">
+				<div class="container">
+					<div class="work__block">
+						<div class="work__img">
+							<img src="./imeges/auto.jpg" alt="желтая машина" />
+							<p class="work__text work__text--foto">
+								Neque metus vitae urna purus aliquam. Felis nullam pellentesque ac mi commodo, amet, porta in. Dui.
+							</p>
+						</div>
+						<ul class="work__list work__list--revers">
+							<li class="work__item">
+								<h2 class="work__title">
+									<svg width="70" height="56" class="work__icon">
+										<use href="./imeges/symbol-defs.svg#icon-Group-55"></use>
+									</svg>
+									100% полироль axem
+								</h2>
+								<p class="work__text">
+									Pharetra in bibendum id id. Sit maecenas sollicitudin est, hendrerit in malesuada. Eu, et lacus nisi
+									mus sagittis, rhoncus est dictum. Gravida lectus urna, arcu, sodales. Ac.
+								</p>
+								<ul class="icons__list">
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+								</ul>
+							</li>
+							<li class="work__item">
+								<h2 class="work__title">
+									<svg width="56" height="70" class="work__icon">
+										<use href="./imeges/symbol-defs.svg#icon-Group-53"></use>
+									</svg>
+									выполняем работу четко по тз
+								</h2>
+								<p class="work__text">
+									Lorem nulla non nibh quis elit odio. Dui et ultricies duis mattis dictum et senectus nunc sodales.
+									Tellus lorem risus etiam quam massa lobortis convallis laoreet. Nec.
+								</p>
+								<ul class="icons__list">
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+									<li class="icons__item">
+										<svg class="icons__icon" width="15" height="15">
+											<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+										</svg>
+									</li>
+								</ul>
+							</li>
+							<li class="work__item">
+								<h2 class="work__title">
+									<svg width="70" height="45" class="work__icon">
+										<use href="./imeges/symbol-defs.svg#icon-Group-52"></use>
+									</svg>
+									у нас лучшие мастера
+								</h2>
+								<p class="work__text">
+									Posuere nam sodales ullamcorper bibendum justo maecenas at. Ultricies bibendum morbi tempor vehicula.
+									Ultrices erat maecenas in id maecenas sed ipsum scelerisque.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- examples -->
+			<section class="examples">
+				<h2 class="examples__title">Наши работы</h2>
+				<ul class="icons__list">
+					<li class="icons__item">
+						<svg class="icons__icon" width="15" height="15">
+							<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+						</svg>
 					</li>
-					<li>
-						<h3>#4</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+					<li class="icons__item">
+						<svg class="icons__icon" width="15" height="15">
+							<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+						</svg>
 					</li>
-					<li>
-						<h3>#6</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+					<li class="icons__item">
+						<svg class="icons__icon" width="15" height="15">
+							<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+						</svg>
 					</li>
-					<li>
-						<h3>#3</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
-					</li>
-					<li>
-						<h3>#2</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
-					</li>
-					<li>
-						<h3>#1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
-					</li>
-					<li>
-						<h3>#1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
-					</li>
-					<li>
-						<h3></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+					<li class="icons__item">
+						<svg class="icons__icon" width="15" height="15">
+							<use href="./imeges/symbol-defs.svg#icon-romb"></use>
+						</svg>
 					</li>
 				</ul>
-			</section>
-
-			<section>
-				<ul>
-					<li>
-						<img src="./imeges/Rectangle 45.jpg" alt="фото машин" width="416px" height="350px" />
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.</p>
+				<ul class="examples__list">
+					<li class="examples__item">
+						<img src="./imeges/Rectangle-56.jpg" alt="фото машин" width="320" height="280" />
 					</li>
-					<li>
-						<img src="./imeges/Rectangle 47.jpg" alt="фото машин" width="416px" height="350px" />
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit.</p>
+					<li class="examples__item">
+						<img src="./imeges/Rectangle-57.jpg" alt="фото машин" width="320" height="280" />
 					</li>
-					<li>
-						<img src="./imeges/Rectangle 49.jpg" alt="фото машин" width="416px" height="350px" />
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.</p>
+					<li class="examples__item">
+						<img src="./imeges/Rectangle-58.jpg" alt="фото машин" width="320" height="280" />
 					</li>
-				</ul>
-			</section>
-
-			<section>
-				<ul>
-					<li>
-						<h2>материалы от лучших компаний</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, rutrum est, molestie proin tristique
-							duis sed. Morbi suspendisse amet nisl vestibulum risus. Quis pretium
-						</p>
+					<li class="examples__item">
+						<img src="./imeges/Rectangle-59.jpg" alt="фото машин" width="320" height="280" />
 					</li>
-					<li>
-						<h2>Опытные мастера</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et donec elementum egestas vitae ullamcorper.
-							Amet volutpat ornare pharetra amet adipiscing orci, lectus aenean ultricies. Erat viverra eget blandit
-							ornare. Molestie ipsum commodo faucibus rhoncus
-						</p>
+					<li class="examples__item">
+						<img src="./imeges/Rectangle-60.jpg" alt="фото машин" width="320" height="280" />
 					</li>
-					<li>
-						<h2>Гарантия на все виды работы</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat.</p>
+					<li class="examples__item">
+						<img src="./imeges/Rectangle-61.jpg" alt="фото машин" width="320" height="280" />
 					</li>
-				</ul>
-				<img src="./imeges/Rectangle 52.jpg" alt="голубая машина" width="636px" height="550px" />
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur
-					lectus.
-				</p>
-			</section>
-
-			<section>
-				<h2>Наши услуги</h2>
-				<button>Оклейка</button>
-				<button>Детейлинг</button>
-				<ul>
-					<li>
-						<h2>Защитные пленки</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut
-							feugiat.
-						</p>
-						<button>Подробнее</button>
+					<li class="examples__item">
+						<img src="./imeges/Rectangle-58.jpg" alt="фото машин" width="320" height="280" />
 					</li>
-					<li>
-						<h2>Цветные пленки</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut
-							feugiat.
-						</p>
-						<button>Подробнее</button>
+					<li class="examples__item">
+						<img src="./imeges/Rectangle-56.jpg" alt="фото машин" width="320" height="280" />
 					</li>
-					<li>
-						<h2>Дизайн</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut
-							feugiat.
-						</p>
-						<button>Подробнее</button>
+					<li class="examples__item">
+						<img src="./imeges/Rectangle-60.jpg" alt="фото машин" width="320" height="280" />
 					</li>
-					<li>
-						<h2>Оклейка салона</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut
-							feugiat.
-						</p>
-						<button>Подробнее</button>
+					<li class="examples__item">
+						<img src="./imeges/Rectangle-59.jpg" alt="фото машин" width="320" height="280" />
+					</li>
+					<li class="examples__item">
+						<img src="./imeges/Rectangle-57.jpg" alt="фото машин" width="320" height="280" />
+					</li>
+					<li class="examples__item">
+						<img src="./imeges/Rectangle-61.jpg" alt="фото машин" width="320" height="280" />
+					</li>
+					<li class="examples__item">
+						<img src="./imeges/Rectangle-60.jpg" alt="фото машин" width="320" height="280" />
+					</li>
+					<li class="examples__item">
+						<img src="./imeges/Rectangle-56.jpg" alt="фото машин" width="320" height="280" />
+					</li>
+					<li class="examples__item">
+						<img src="./imeges/Rectangle-58.jpg" alt="фото машин" width="320" height="280" />
 					</li>
 				</ul>
-			</section>
-
-			<section>
-				<img src="./imeges/auto.jpg" alt="желтая машина" />
-				<p>Neque metus vitae urna purus aliquam. Felis nullam pellentesque ac mi commodo, amet, porta in. Dui.</p>
-				<ul>
-					<li>
-						<h2>100% полироль axem</h2>
-						<p>
-							Pharetra in bibendum id id. Sit maecenas sollicitudin est, hendrerit in malesuada. Eu, et lacus nisi mus
-							sagittis, rhoncus est dictum. Gravida lectus urna, arcu, sodales. Ac.
-						</p>
-					</li>
-					<li>
-						<h2>выполняем работу четко по тз</h2>
-						<p>
-							Lorem nulla non nibh quis elit odio. Dui et ultricies duis mattis dictum et senectus nunc sodales. Tellus
-							lorem risus etiam quam massa lobortis convallis laoreet. Nec.
-						</p>
-					</li>
-					<li>
-						<h2>у нас лучшие мастера</h2>
-						<p>
-							Posuere nam sodales ullamcorper bibendum justo maecenas at. Ultricies bibendum morbi tempor vehicula.
-							Ultrices erat maecenas in id maecenas sed ipsum scelerisque.
-						</p>
-					</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Наши работы</h2>
-				<img src="./imeges/Rectangle 56.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 57.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 58.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 59.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 60.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 61.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 58.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 60.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 56.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 59.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 61.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 57.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 60.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 56.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 58.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 61.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 59.jpg" alt="фото машин" width="320px" height="280px" />
-				<img src="./imeges/Rectangle 57.jpg" alt="фото машин" width="320px" height="280px" />
 			</section>
 		</main>
-        <footer></footer>
+		<footer></footer>
 	</body>
 </html>

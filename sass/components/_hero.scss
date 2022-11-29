@@ -1,0 +1,40 @@
+.hero {
+	text-align: center;
+	padding-top: 168px;
+	padding-bottom: 103px;
+}
+.hero__title {
+	font-size: 150px;
+	line-height: 1.25;
+
+	color: $primeryTextColor;
+
+	margin-bottom: 25px;
+	margin-top: 0;
+}
+.icons__list {
+	@extend %list;
+	display: flex;
+	justify-content: center;
+
+
+}
+
+.icons__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.icons__list--start{
+	justify-content: flex-start;
+}
+.hero__text {
+	font-size: 25px;
+	line-height: 1.2;
+
+	margin-top: 41px;
+	margin-bottom: 40px;
+}
+.foto {
+	background-image: url(../../imeges/Rectangle-64.jpg);
+	background-repeat: no-repeat;
+}

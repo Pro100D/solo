@@ -1,0 +1,70 @@
+.achievements {
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	&__flex {
+		display: flex;
+	}
+	&__block {
+		margin-right: 25px;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 1.6;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 1.2;
+
+		margin-bottom: 0;
+		margin-top: 60px;
+
+		letter-spacing: 0.03em;
+	}
+	&-list {
+		@extend %list;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&-list__item {
+		text-align: center;
+		border: 1px solid #898989;
+		padding: 30px 20px;
+		width: 319px;
+		height: 177px;
+	}
+	&-list__item:nth-child(2n) {
+		margin-top: 20px;
+		margin-left: 15px;
+	}
+
+	&-list__title {
+		font-size: 30px;
+		line-height: 1.4;
+
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+
+		color: $primeryTextColor;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+
+	&-list__text {
+		font-size: 15px;
+		line-height: 1.2;
+
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		margin: 0;
+	}
+}

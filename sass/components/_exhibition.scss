@@ -1,0 +1,43 @@
+.exhibition {
+
+	&-list {
+		@extend %list;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__item {
+		position: relative;
+	}
+
+	&__item:not(:last-child) {
+		margin-right: 24px;
+	}
+
+	&__img--fon {
+		position: absolute;
+		bottom: -35px;
+		left: 25px;
+
+		background-color: $primeryTextColor;
+
+		width: 366px;
+		height: 70px;
+	}
+
+	&__text {
+        position: absolute;
+        bottom: -30px;
+        left: 40px;
+		right: 40px;
+        margin: 0;
+
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 1.4;
+
+		text-align: center;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+	}
+}

@@ -1,0 +1,25 @@
+body{
+    background-color: #141414;
+    color: #FFFFFF;
+    font-family: Oswald, sans-serif;
+}
+
+img{
+ 
+    height: auto;
+    display: block;
+}
+
+%list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container{
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
