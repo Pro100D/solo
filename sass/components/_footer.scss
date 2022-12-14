@@ -1,0 +1,23 @@
+.footer {
+	border-top: 1px solid #898989;
+}
+
+.footer__block {
+	display: flex;
+	align-items: center;
+
+	padding-top: 34px;
+	padding-bottom: 34px;
+}
+.footer__text {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.32;
+
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	color: #cccccc;
+
+	margin-right: 82px;
+}

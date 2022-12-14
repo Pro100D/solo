@@ -9,6 +9,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="./css/main.min.css" />
 		<title>Document</title>
 	</head>
@@ -18,8 +19,8 @@
 			<header class="header">
 				<div class="container">
 					<nav class="header__nav">
-						<ul class="header__list">
-							<li class="header__item"><a class="header__link" href="">Главная</a></li>
+						<ul class="header__list" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="750">
+							<li class="header__item"><a class="header__link current" href="">Главная</a></li>
 							<li class="header__item"><a class="header__link" href="">Оклейка автомобилей</a></li>
 							<li class="header__item"><a class="header__link" href="">Детейлинг автомобилей</a></li>
 							<li class="header__item"><a class="header__link" href="">Галерея работ</a></li>
@@ -32,7 +33,7 @@
 			</header>
 			<!-- hero -->
 			<section class="hero">
-				<h1 class="hero__title">CAR MUSC</h1>
+				<h1 class="hero__title" data-aos="zoom-in">CAR MUSC</h1>
 				<ul class="icons__list">
 					<li class="icons__item">
 						<svg class="icons__icon" width="15" height="15">
@@ -55,16 +56,24 @@
 						</svg>
 					</li>
 				</ul>
-				<p class="hero__text">
+				<p class="hero__text" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 					Lorem ipsum dolor sit amet, consectetur
 					<br />
 					adipiscing elit. Vitae orci urna amet penatibus.
 				</p>
-				<button class="primery__button">Наши услуги</button>
+				<button
+					class="primery__button"
+					data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-delay="300"
+					data-aos-offset="0"
+				>
+					Наши услуги
+				</button>
 			</section>
 			<!-- info -->
 			<section class="info">
-				<div class="info__address">
+				<div class="info__address" data-aos="zoom-out-right">
 					<h2 class="info__title">адрес:</h2>
 					<p class="info__text">
 						Lorem ipsum dolor sit amet,
@@ -72,12 +81,12 @@
 						consectetur adipiscing elit
 					</p>
 				</div>
-				<div class="info__contacts">
+				<div class="info__contacts" data-aos="zoom-out-down">
 					<h2 class="info__title">телефон:</h2>
 					<a href="" class="info__link">8 (812) 123-45-67</a>
 					<a href="" class="info__link">8-911-123-45-67</a>
 				</div>
-				<div class="info__schedule">
+				<div class="info__schedule" data-aos="zoom-out-left">
 					<h2 class="info__title">Режим работы:</h2>
 					<p class="info__text">пн-пт : 10:00 - 20:00</p>
 					<p class="info__text">сб-вск : 12:00 - 20:00</p>
@@ -88,7 +97,7 @@
 			<!-- achievements -->
 			<section class="achievements">
 				<div class="achievements__flex container">
-					<div class="achievements__block">
+					<div class="achievements__block" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 						<h2 class="achievements__title">наши достижения от кубка россии до чемпионатов мира</h2>
 						<ul class="icons__list icons__list--start">
 							<li class="icons__item">
@@ -120,49 +129,49 @@
 						</p>
 					</div>
 					<ul class="achievements-list">
-						<li class="achievements-list__item">
+						<li class="achievements-list__item" data-aos="flip-left">
 							<h3 class="achievements-list__title">#1</h3>
 							<p class="achievements-list__text">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
 							</p>
 						</li>
-						<li class="achievements-list__item">
+						<li class="achievements-list__item" data-aos="flip-right">
 							<h3 class="achievements-list__title">#4</h3>
 							<p class="achievements-list__text">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
 							</p>
 						</li>
-						<li class="achievements-list__item">
+						<li class="achievements-list__item" data-aos="flip-left">
 							<h3 class="achievements-list__title">#6</h3>
 							<p class="achievements-list__text">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
 							</p>
 						</li>
-						<li class="achievements-list__item">
+						<li class="achievements-list__item" data-aos="flip-right">
 							<h3 class="achievements-list__title">#3</h3>
 							<p class="achievements-list__text">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
 							</p>
 						</li>
-						<li class="achievements-list__item">
+						<li class="achievements-list__item" data-aos="flip-left">
 							<h3 class="achievements-list__title">#2</h3>
 							<p class="achievements-list__text">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
 							</p>
 						</li>
-						<li class="achievements-list__item">
+						<li class="achievements-list__item" data-aos="flip-right">
 							<h3 class="achievements-list__title">#1</h3>
 							<p class="achievements-list__text">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
 							</p>
 						</li>
-						<li class="achievements-list__item">
+						<li class="achievements-list__item" data-aos="flip-left">
 							<h3 class="achievements-list__title">#1</h3>
 							<p class="achievements-list__text">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
 							</p>
 						</li>
-						<li class="achievements-list__item">
+						<li class="achievements-list__item" data-aos="flip-right">
 							<h3 class="achievements-list__title">
 								<svg width="38" height="45">
 									<use href="./imeges/symbol-defs.svg#icon-cup"></use>
@@ -176,7 +185,7 @@
 				</div>
 			</section>
 			<!-- Exhibition -->
-			<section class="exhibition">
+			<section class="exhibition" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
 				<ul class="exhibition-list">
 					<li class="exhibition__item">
 						<img src="./imeges/Rectangle-45.jpg" alt="фото машин" width="416" height="350" />
@@ -325,15 +334,15 @@
 							</svg>
 						</li>
 					</ul>
-					<ul class="services-buttons">
+					<ul class="services-buttons" >
 						<li class="services-buttons__item"><button class="services__button">Оклейка</button></li>
 						<li class="services-buttons__item">
 							<button class="services__button services__button--trenspar">Детейлинг</button>
 						</li>
 					</ul>
 					<ul class="services-list">
-						<li class="services-list__item">
-							<svg width="70" height="56">
+						<li class="services-list__item" data-aos="flip-up">
+							<svg width="70" height="70">
 								<use href="./imeges/symbol-defs.svg#icon-Group-55"></use>
 							</svg>
 							<h2 class="services-list__title">Защитные пленки</h2>
@@ -343,8 +352,8 @@
 							</p>
 							<button class="services-list__button">Подробнее</button>
 						</li>
-						<li class="services-list__item">
-							<svg width="56" height="70">
+						<li class="services-list__item" data-aos="flip-up">
+							<svg width="70" height="70">
 								<use href="./imeges/symbol-defs.svg#icon-Group-53"></use>
 							</svg>
 							<h2 class="services-list__title">Цветные пленки</h2>
@@ -354,8 +363,8 @@
 							</p>
 							<button class="services-list__button">Подробнее</button>
 						</li>
-						<li class="services-list__item">
-							<svg width="70" height="45">
+						<li class="services-list__item" data-aos="flip-up">
+							<svg width="70" height="70">
 								<use href="./imeges/symbol-defs.svg#icon-Group-52"></use>
 							</svg>
 							<h2 class="services-list__title">Дизайн</h2>
@@ -365,7 +374,7 @@
 							</p>
 							<button class="services-list__button">Подробнее</button>
 						</li>
-						<li class="services-list__item">
+						<li class="services-list__item" data-aos="flip-up">
 							<svg width="70" height="70">
 								<use href="./imeges/symbol-defs.svg#icon-Group-54"></use>
 							</svg>
@@ -548,7 +557,7 @@
 				</ul>
 			</section>
 			<!-- form -->
-			<section class="">
+			<section class="section__form">
 				<h2 class="title">ответим на любой вопрос</h2>
 				<ul class="icons__list">
 					<li class="icons__item">
@@ -612,9 +621,53 @@
 							</li>
 						</ul>
 					</div>
+					<div class="form__info">
+						<button class="form__button" type="submit">отправить</button>
+						<div class="info-list">
+							<a class="form__link" href="">
+								<svg class="info__icon">
+									<use href="./imeges/symbol-defs.svg#icon-location"></use>
+								</svg>
+								Eu faucibus et rutrum fringilla orci nunc
+							</a>
+							<div class="info__block">
+								<a class="form__link" href="tel:88121234567">
+									<svg class="info__icon">
+										<use href="./imeges/symbol-defs.svg#icon-phone"></use>
+									</svg>
+									8 (812) 123-45-67
+								</a>
+								<a class="form__link" href="mailto:test@test.ru">
+									<svg class="info__icon">
+										<use href="./imeges/symbol-defs.svg#icon-mail"></use>
+									</svg>
+									test@test.ru
+								</a>
+							</div>
+						</div>
+					</div>
 				</form>
 			</section>
 		</main>
-		<footer></footer>
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__block">
+					<p class="footer__text">
+						2022 &#xa9; Est et viverra pellentesque pharetra lorem proin in. Vitae magna at tempus commodo.
+					</p>
+					<ul class="header__list">
+						<li class="header__item"><a class="header__link" href="">Главная</a></li>
+						<li class="header__item"><a class="header__link" href="">Оклейка автомобилей</a></li>
+						<li class="header__item"><a class="header__link" href="">Детейлинг автомобилей</a></li>
+						<li class="header__item"><a class="header__link" href="">Галерея работ</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
